@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Drawer } from '@mui/material'
-import Login from './Login'
+import Connect from './Connect'
 
 function SideMenu({
   isOpen,
@@ -12,7 +12,7 @@ function SideMenu({
   return (
     <Drawer anchor="right" open={isOpen} onClose={() => setIsOpen(false)}>
       <Box sx={{ padding: '0.5rem', paddingTop: '2rem' }}>
-        <Login />
+        <Connect />
       </Box>
     </Drawer>
   )

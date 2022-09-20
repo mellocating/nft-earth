@@ -2,7 +2,7 @@ import { useConnect } from "wagmi";
 import { InjectedConnector } from "wagmi/connectors/injected";
 import { Button } from "@mui/material";
 
-function Signin() {
+function Connect() {
   const { connectAsync } = useConnect();
 
   const handleAuth = async () => {
@@ -17,9 +17,9 @@ function Signin() {
 
   return (
     <div>
-      <Button onClick={() => handleAuth()}>Authenticate via Metamask</Button>
+      <Button onClick={() => handleAuth()}>Connect Metamask</Button>
     </div>
   );
 }
 
-export default Signin;
+export default Connect;
